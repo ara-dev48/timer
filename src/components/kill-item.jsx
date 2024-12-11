@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const KillItem = ({ id, timeEnd, onRestore, timeStart, diff }) => {
+export const KillItem = ({ id, timeEnd, onRestore, timeStart, }) => {
   let timeInSec = (start, end) => {
     let a = +start.slice(0,2)*60 + +start.split(':')[1]
     let b = +end.slice(0,2)*60 + +end.split(':')[1]

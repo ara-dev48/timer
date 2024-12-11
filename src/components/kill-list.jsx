@@ -1,6 +1,6 @@
 import { KillItem } from "./kill-item";
 
-export const KillList = ({ killed, onRestore, timeStart, diff }) => {
+export const KillList = ({ killed, onRestore, timeStart}) => {
   return (
     <div className="bg-gray-800 p-4 rounded-md shadow-md border border-gray-700">
       <table className="w-full text-left text-sm text-white border-collapse border border-gray-700">

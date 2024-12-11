@@ -7,10 +7,6 @@ function App() {
   const [timers, setTimers] = useState([])
   const [killed, setKilled] = useState([])
   const [timeStart, setTimeStart] = useState('')
-  const [difference, setDifference] = useState(0)
-  const diff = () => {
-    setDifference()
-  }
   const handleRemove = (id, timeEnd) => {
     setTimers(timers.filter(timer => {
       if (timer.id == id) {
