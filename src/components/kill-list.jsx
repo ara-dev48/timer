@@ -18,7 +18,6 @@ export const KillList = ({ killed, onRestore, timeStart}) => {
             killed.map(item =>
               <KillItem
                 onRestore={onRestore}
-                diff={diff}
                 key={item.id}
                 timeStart={timeStart}
                 {...item} //id={item.id} timeEnd={item.timeEnd}

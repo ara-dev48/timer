@@ -29,7 +29,6 @@ function App() {
         <button
           onClick={() => {
             setTimeStart(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
-            setDifference()
             setTimers([...timers, { id: Date.now() }])
           }}
           className="bg-red-300 px-4 py-2 rounded-md hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-red-300"
@@ -46,7 +45,6 @@ function App() {
             onRestore={handleRestore}
             killed={killed}
             timeStart={timeStart}
-            diff={diff}
             className="flex-1 border border-gray-300 p-4 rounded-md"
           />
         </div>
